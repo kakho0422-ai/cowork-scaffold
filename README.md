@@ -6,10 +6,10 @@ A collaborative AI workflow — where code, design, and reasoning are all versio
 
 This repo is both the **sample project** and the **workflow itself**. The act of setting it up is what we're building.
 
-Three AIs can collaborate here:
+The players:
+- **Ken** — the director, decides what gets built and when
 - **Chloe (Claude)** — builds files, writes reasoning, edits in Cowork2
 - **ChatGPT** — reads the repo, picks up context from reasoning logs
-- **You (Ken)** — directs, decides, pushes commits
 
 ## Folder Structure
 
@@ -18,6 +18,9 @@ cowork-scaffold/
 ├── README.md              ← you are here
 ├── reasoning/             ← decision logs (the "why" behind every change)
 │   └── 2026-02-23.md     ← first entry: why we built this
+├── states/                ← living snapshots of each player
+│   ├── ken.md            ← Ken's current knowledge, preferences, tools
+│   └── chloe.md          ← Chloe's capabilities, limitations, gaps
 ├── figma/                 ← links and notes to Figma designs
 │   └── links.md
 ├── docs/                  ← guides for using this workflow
@@ -36,8 +39,9 @@ cowork-scaffold/
 
 To get full context on this project, read these files in order:
 1. `README.md` — this file
-2. `reasoning/` — all decision logs, newest first
-3. `docs/how-to-collaborate.md` — how to contribute
+2. `states/` — who the players are, what they know, what they can do
+3. `reasoning/` — all decision logs, newest first
+4. `docs/how-to-collaborate.md` — how to contribute
 
 ---
 *Built with Claude (Chloe) via Cowork on 2026-02-23*
